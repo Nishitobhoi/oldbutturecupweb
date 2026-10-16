@@ -83,6 +83,10 @@
   -webkit-transform: translateY(-50%) translateX(-50%) scale(0.001);
           transform: translateY(-50%) translateX(-50%) scale(0.001);
   opacity: 0;
+  pointer-events: none;
+}
+.menuBg.showMenu {
+  pointer-events: auto;
 }
 
 .mobileNav {
@@ -95,9 +99,11 @@
   margin: 0;
   padding: 0;
   opacity: 0; width: 100%;display: none;
+  pointer-events: none;
 }
 .mobileNav.fadeIn {
-  z-index: 9000;display: block
+  z-index: 9000;display: block;
+  pointer-events: auto;
 }
 .mobileNav li {
   /*min-width: 600px;*/
